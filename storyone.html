@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Goblin's Secret Forge - About Honor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="menu"></div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                fetch('menu.html')
+                    .then(response => response.text())
+                    .then(data => document.getElementById('menu').innerHTML = data)
+                    .catch(error => console.error('Error:', error));
+            });
+        </script>
+    </header>
+
+    <section class="story-content">
+        <div class="container" style="max-width: 800px; margin: 0 auto; text-align: justify;">
+            <h2>The Goblin's Secret Forge</h2>
+            <img src="images/story1.jpg" alt="The Goblin's Secret Forge Image" style="width: 100%; height: auto; max-height: 400px;">
+            <p>Once upon a time, in a dark and slightly damp corner of the Goblin City, there was a forge. Not just any forge, mind you, but a forge so secret that even the goblins weren't entirely sure why it was there. It was said to be a place of great magic and mystery, though most goblins only cared about whether it could make their axes shinier or their kettles boil faster. 
+            </p>
+            <p>One day, Lugero, a particularly curious goblin (which is quite a rarity, since most goblins prefer their curiosity to be about what’s for dinner rather than the nature of mysterious glowing anvils), decided to uncover the secrets of the forge. Armed with nothing but a tarnished pickaxe and a rather impressive hat, Lugero approached the forge with all the grace of a goblin trying to sneak past a sleeping troll - which is to say, not much grace at all.
+            </p>
+            <p>"Aye, what’s all this about then?" Lugero muttered, prodding a strange rune carved into the forge’s side. The rune lit up, and for a moment, Lugero wondered if he'd accidentally triggered some ancient magic spell that would transform him into something unpleasant - like a very small rock. Instead, the forge began to hum, then sputter, and finally, with a loud whoosh, it roared to life.
+            </p>
+            <p>Out of the flames stepped an even more curious figure: a goblin blacksmith who seemed to have been napping inside the forge for who knows how long. "Who dares disturb me nap?!" the blacksmith grumbled, brushing off the soot and glancing at Lugero with a mix of annoyance and genuine confusion.
+            </p>
+            <p>"Er... Lugero's the name, shiny things are me game," Lugero said, trying his best to look brave. "Just thought I’d see what all this was about, you know, with the glowy bits and all."
+            </p>
+            <p>To Lugero's surprise, the blacksmith grinned a crooked smile. "Shiny things, eh? Well, ye've come to the right place, lad. This here forge's got the power to make anything - swords, shields, even spoons - shinier than the Queen’s crown! But it ain't just about looks. It’s got power too - enough to keep the whole city warm, if’n ye know how to use it."
+            </p>
+            <p>And so, the two goblins - one with a knack for shiny things and the other with a penchant for naps in dangerous places - set to work uncovering the secrets of the forge. There were sparks, there was laughter, and at one point, there was even an accidental transformation of a kettle into a rather aggressive teapot (which thankfully calmed down after a nice cup of chamomile).
+            </p>
+            <p>The goblin city was never quite the same again. The forge, once forgotten and mysterious, became the bustling heart of the goblin’s ingenuity. And Lugero? He finally had his shiny things, and a story worth telling - one that might even make it to the Great Goblin Library (which, truth be told, was more of a small shelf near the pub).
+            </p>
+        </div>
+        <div class="video-container" style="width: 100%; max-width: 800px; margin: 40px auto;">
+            <iframe src="https://www.youtube.com/embed/example-video-id" frameborder="0" allowfullscreen width="100%" height="500"></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-info">
+                <p>&copy; 2024 About Honor. All Rights Reserved.</p>
+                <ul class="footer-links">
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Use</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Stories - About Honor</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .story-preview {
+            margin-bottom: 80px;
+            text-align: center;
+        }
+        .story-preview img {
+            width: 100%;
+            height: auto;
+            max-height: 250px;
+            object-fit: cover;
+        }
+        .story-preview h3 {
+            margin-top: 20px;
+            font-size: 24px;
+        }
+        .story-preview p {
+            text-align: justify;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        .story-preview .btn {
+            display: inline-block;
+            margin-top: 15px;
+            background-color: #8b5e34;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .story-preview .btn:hover {
+            background-color: #a76c3e;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="menu"></div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                fetch('menu.html')
+                    .then(response => response.text())
+                    .then(data => document.getElementById('menu').innerHTML = data)
+                    .catch(error => console.error('Error:', error));
+            });
+        </script>
+    </header>
+
+    <section class="stories-directory">
+        <div class="container">
+            <h2>Mini Stories Directory</h2>
+            <div class="story-preview">
+                <img src="images/story1_thumb.jpg" alt="The Goblin's Secret Forge Thumbnail">
+                <h3><a href="storyone.html">The Goblin's Secret Forge</a></h3>
+                <p>Join Lugero as he unravels the mysteries of the goblin forge, discovering forgotten magic and shiny secrets that might just change the goblin city forever.</p>
+                <a href="storyone.html" class="btn">Read this story</a>
+            </div>
+            <div class="story-preview">
+                <img src="images/story2_thumb.jpg" alt="The Dragon’s Eggshell Mystery Thumbnail">
+                <h3>The Dragon’s Eggshell Mystery</h3>
+                <p>Strange occurrences have begun in the moon-like remains of the dragon’s eggshell. An unlikely team sets out to uncover the truth hidden beneath layers of ancient magic.</p>
+                <a href="#" class="btn">Read this story</a>
+            </div>
+            <div class="story-preview">
+                <img src="images/story3_thumb.jpg" alt="The Goblin Tea Party Thumbnail">
+                <h3>The Goblin Tea Party</h3>
+                <p>When a kettle is accidentally transformed into a cranky teapot, the goblins decide to throw a tea party. What could possibly go wrong? Plenty, as it turns out.</p>
+                <a href="#" class="btn">Read this story</a>
+            </div>
+            <div class="story-preview">
+                <img src="images/story4_thumb.jpg" alt="The Missing Spoon of Valor Thumbnail">
+                <h3>The Missing Spoon of Valor</h3>
+                <p>The Goblin King’s prized Spoon of Valor has gone missing. Lugero must navigate through the twisted alleys of the Goblin City to find it, encountering riddles and challenges along the way.</p>
+                <a href="#" class="btn">Read this story</a>
+            </div>
+            <div class="story-preview">
+                <img src="images/story5_thumb.jpg" alt="The Singing Furnace Thumbnail">
+                <h3>The Singing Furnace</h3>
+                <p>The ancient furnace has begun to sing strange songs at night, and the goblins are scared. Is it a warning, or something more? Lugero takes it upon himself to discover the truth.</p>
+                <a href="#" class="btn">Read this story</a>
+            </div>
+            <div class="story-preview">
+                <img src="images/story6_thumb.jpg" alt="The Troll Bridge Incident Thumbnail">
+                <h3>The Troll Bridge Incident</h3>
+                <p>The goblins' shortcut to the forge has been blocked by an irate troll demanding tolls. Lugero must use all his wit to negotiate with the troll - or risk a lengthy detour.</p>
+                <a href="#" class="btn">Read this story</a>
+            </div>
+            <div class="story-preview">
+                <img src="images/story7_thumb.jpg" alt="The Goblin's Invention Fair Thumbnail">
+                <h3>The Goblin's Invention Fair</h3>
+                <p>The first ever Goblin Invention Fair is here! Lugero and his friends showcase wild and whacky inventions, with some unexpected (and explosive) results.</p>
+                <a href="#" class="btn">Read this story</a>
+            </div>
+            <div class="story-preview">
+                <img src="images/story8_thumb.jpg" alt="The Curious Case of the Missing Mushrooms Thumbnail">
+                <h3>The Curious Case of the Missing Mushrooms</h3>
+                <p>When the goblin’s prized mushrooms disappear, Lugero finds himself in the middle of a culinary crisis. Could it be the pesky brown crows, or is there a bigger mystery afoot?</p>
+                <a href="#" class="btn">Read this story</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-info">
+                <p>&copy; 2024 About Honor. All Rights Reserved.</p>
+                <ul class="footer-links">
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Use</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
