@@ -1,29 +1,31 @@
 body {
-    font-family: 'Cinzel', serif;
-    background-color: #0d0d0d;
-    color: #f5f5f5;
+    font-family: 'Roboto', sans-serif;
+    background-color: #2e1e0f;
+    color: #f0e4d7;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 .navbar {
-    background-color: #1c1c1c;
+    background-color: #4a2c17;
     padding: 20px;
     box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.6);
-    border-bottom: 2px solid #8b5e34;
+    border-bottom: 2px solid #d4af37;
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
 .brand-logo a {
-    color: #d4af37;
-    font-size: 32px;
+    color: #f0d794;
+    font-size: 42px;
     font-weight: bold;
     text-decoration: none;
+    font-family: 'Uncial Antiqua', cursive;
 }
 
 .nav-links {
@@ -33,14 +35,15 @@ body {
     gap: 30px;
     margin: 0;
     align-items: center;
+    justify-content: center;
 }
 
 .nav-links a {
-    color: #f5f5f5;
+    color: #f0e4d7;
     text-decoration: none;
     transition: color 0.3s;
     padding: 10px;
-    font-size: 18px;
+    font-size: 22px;
 }
 
 .nav-links a:hover {
@@ -49,76 +52,84 @@ body {
 }
 
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/hero-bg.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(46, 30, 15, 0.8), rgba(46, 30, 15, 0.8)), url('images/hero-bg.jpg') no-repeat center center/cover;
     height: 700px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #f5f5f5;
+    color: #f0e4d7;
+    border-bottom: 3px solid #d4af37;
 }
 
 .hero-content h1 {
-    font-size: 64px;
+    font-size: 76px;
     font-weight: 700;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 8px #000;
+    text-shadow: 3px 3px 10px #000;
+    font-family: 'Uncial Antiqua', cursive;
 }
 
 .hero-content .btn {
-    background-color: #8b5e34;
-    color: #ffffff;
+    background-color: #d4af37;
+    color: #2e1e0f;
     padding: 18px 45px;
     text-decoration: none;
-    border-radius: 10px;
+    border-radius: 12px;
     font-weight: bold;
     transition: background-color 0.3s, transform 0.3s;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .hero-content .btn:hover {
-    background-color: #a76c3e;
+    background-color: #f0d794;
     transform: scale(1.05);
 }
 
 .features {
     padding: 100px 0;
-    background-color: #1a1a1a;
+    background-color: #3a2513;
+    border-top: 3px solid #d4af37;
 }
 
 .features .feature {
     margin-bottom: 50px;
     padding: 25px;
-    background-color: #2e2e2e;
+    background-color: #4a2c17;
     border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
-    border: 1px solid #8b5e34;
+    border: 2px solid #d4af37;
 }
 
 .features h2 {
-    color: #d4af37;
+    color: #f0d794;
     margin-bottom: 20px;
-    font-size: 28px;
+    font-size: 36px;
+    font-family: 'Uncial Antiqua', cursive;
 }
 
 .features p {
-    font-size: 20px;
+    font-size: 24px;
     line-height: 1.8;
+    font-family: 'Roboto', sans-serif;
 }
 
 .features .btn {
     display: inline-block;
     margin-top: 25px;
-    background-color: #8b5e34;
-    color: #ffffff;
+    background-color: #d4af37;
+    color: #2e1e0f;
     padding: 15px 30px;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 10px;
     font-weight: bold;
     transition: background-color 0.3s;
+    font-family: 'Roboto', sans-serif;
 }
 
 .features .btn:hover {
-    background-color: #a76c3e;
+    background-color: #f0d794;
 }
 
 .gallery-preview {
@@ -132,36 +143,38 @@ body {
 }
 
 .gallery-item {
-    background-color: #2e2e2e;
+    background-color: #4a2c17;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
-    border: 1px solid #8b5e34;
+    border: 2px solid #d4af37;
 }
 
 .gallery-item img {
     width: 100%;
     border-radius: 8px;
-    border: 2px solid #8b5e34;
+    border: 3px solid #d4af37;
 }
 
 .gallery-item p {
     margin-top: 10px;
-    font-size: 18px;
+    font-size: 22px;
     text-align: center;
-    color: #f5f5f5;
+    color: #f0e4d7;
+    font-family: 'Roboto', sans-serif;
 }
 
 .footer {
-    background-color: #0d0d0d;
+    background-color: #2e1e0f;
     padding: 50px 0;
     text-align: center;
-    border-top: 2px solid #8b5e34;
+    border-top: 3px solid #d4af37;
 }
 
 .footer-info p {
     margin: 0;
-    color: #d4af37;
+    color: #f0d794;
+    font-family: 'Roboto', sans-serif;
 }
 
 .footer-links {
@@ -174,10 +187,11 @@ body {
 }
 
 .footer-links a {
-    color: #f5f5f5;
+    color: #f0e4d7;
     text-decoration: none;
     transition: color 0.3s;
-    font-size: 16px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .footer-links a:hover {
@@ -186,29 +200,33 @@ body {
 
 .form-section {
     padding: 100px 0;
-    background-color: #1a1a1a;
+    background-color: #3a2513;
+    border-top: 3px solid #d4af37;
 }
 
 .form-section h2 {
-    color: #d4af37;
+    color: #f0d794;
     margin-bottom: 25px;
+    font-size: 36px;
+    font-family: 'Uncial Antiqua', cursive;
 }
 
 .form-section form {
     max-width: 600px;
     margin: 0 auto;
-    background-color: #2e2e2e;
+    background-color: #4a2c17;
     padding: 35px;
     border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
-    border: 1px solid #8b5e34;
+    border: 2px solid #d4af37;
 }
 
 .form-section label {
     display: block;
     margin-bottom: 12px;
     font-weight: bold;
-    color: #f5f5f5;
+    color: #f0e4d7;
+    font-family: 'Roboto', sans-serif;
 }
 
 .form-section input[type="text"],
@@ -219,27 +237,30 @@ body {
     margin-bottom: 25px;
     border: none;
     border-radius: 6px;
-    background-color: #1c1c1c;
+    background-color: #2e1e0f;
     color: #ffffff;
-    border: 1px solid #8b5e34;
+    border: 1px solid #d4af37;
+    font-family: 'Roboto', sans-serif;
 }
 
 .form-section input::placeholder,
 .form-section textarea::placeholder {
     color: #bbb;
+    font-family: 'Roboto', sans-serif;
 }
 
 .form-section button[type="submit"] {
-    background-color: #8b5e34;
-    color: #ffffff;
+    background-color: #d4af37;
+    color: #2e1e0f;
     padding: 15px 30px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
     font-weight: bold;
+    font-family: 'Roboto', sans-serif;
 }
 
 .form-section button[type="submit"]:hover {
-    background-color: #a76c3e;
+    background-color: #f0d794;
 }
