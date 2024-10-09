@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Honor - A Fantasy Journey</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #333;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .brand-logo a {
+            color: #f39c12;
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+        }
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover {
+            color: #f39c12;
+        }
+        .hero {
+            background: url('images/hero-bg.jpg') no-repeat center center/cover;
+            height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #ffffff;
+        }
+        .hero-content h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .hero-content .btn {
+            background-color: #f39c12;
+            color: #ffffff;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .hero-content .btn:hover {
+            background-color: #d35400;
+        }
+        .features {
+            padding: 60px 0;
+            background-color: #2c2c2c;
+        }
+        .features .feature {
+            margin-bottom: 30px;
+        }
+        .features h2 {
+            color: #f39c12;
+        }
+        .features .btn {
+            display: inline-block;
+            margin-top: 20px;
+            background-color: #f39c12;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .features .btn:hover {
+            background-color: #d35400;
+        }
+        .gallery-preview {
+            padding: 60px 0;
+        }
+        .gallery-grid {
+            display: flex;
+            gap: 20px;
+        }
+        .gallery-item {
+            flex: 1;
+            background-color: #333;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .gallery-item img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .footer {
+            background-color: #1a1a1a;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer-info p {
+            margin: 0;
+            color: #f39c12;
+        }
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .footer-links a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .footer-links a:hover {
+            color: #f39c12;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="brand-logo">
+                    <a href="index.html">About Honor</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About the Book</a></li>
+                    <li><a href="characters.html">Characters</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Discover the World of <span>About Honor</span></h1>
+            <p>An epic tale of courage, mystery, and balance set in a world beyond imagination.</p>
+            <a href="#" class="btn">Start Your Journey</a>
+        </div>
+    </section>
+
+    <!-- Featured Sections -->
+    <section class="features">
+        <div class="container">
+            <div class="feature">
+                <h2>A World Unlike Any Other</h2>
+                <p>Explore the intricacies of a dragon's egg-world where the forces of magic and fate are balanced by powerful beings.</p>
+                <a href="about.html" class="btn">Learn More</a>
+            </div>
+            <div class="feature">
+                <h2>The Goblin City Awaits</h2>
+                <p>Immerse yourself in the captivating story of Lugero and his mission to navigate the intrigues of the Goblin City.</p>
+                <a href="characters.html" class="btn">Meet the Characters</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Preview -->
+    <section class="gallery-preview">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/gallery1.jpg" alt="City of the Goblins">
+                    <p>City of the Goblins</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery2.jpg" alt="The Dragon Mother">
+                    <p>The Dragon Mother</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery3.jpg" alt="Inside the Furnace">
+                    <p>Inside the Furnace</p>
+                </div>
+            </div>
+            <a href="gallery.html" class="btn">View Full Gallery</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-info">
+                <p>&copy; 2024 About Honor. All Rights Reserved.</p>
+                <ul class="footer-links">
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Use</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
