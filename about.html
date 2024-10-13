@@ -5,12 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About the Book - About Honor</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Ensure proper display for different screen sizes */
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .menu-toggle {
+            display: none;
+            cursor: pointer;
+            font-size: 24px;
+            background: none;
+            border: none;
+            color: #f5f5f5;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                gap: 15px;
+                background-color: #5c4321;
+                padding: 10px;
+                position: absolute;
+                top: 60px;
+                right: 20px;
+                border: 2px solid #8b5e34;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            }
+
+            .nav-links.show {
+                display: flex;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <div id="menu"></div>
+        <div id="menu"></div> <!-- Placeholder to insert the menu from menu.html -->
+
         <script>
             document.addEventListener("DOMContentLoaded", function() {
+                // Fetch the content of 'menu.html' and insert it into the 'menu' div
                 fetch('menu.html')
                     .then(response => {
                         if (!response.ok) {
@@ -20,6 +62,16 @@
                     })
                     .then(data => {
                         document.getElementById('menu').innerHTML = data;
+
+                        // Add the toggle functionality to the hamburger menu button
+                        const menuToggle = document.querySelector('.menu-toggle');
+                        const navLinks = document.querySelector('.nav-links');
+
+                        if (menuToggle && navLinks) {
+                            menuToggle.addEventListener('click', () => {
+                                navLinks.classList.toggle('show');
+                            });
+                        }
                     })
                     .catch(error => {
                         console.error('There was a problem with the fetch operation:', error);
@@ -47,5 +99,8 @@
             </div>
         </div>
     </footer>
+
+    <!-- Reference the JavaScript file to load the menu -->
+    <script src="menu.js"></script>
 </body>
 </html>

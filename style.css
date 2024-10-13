@@ -51,6 +51,40 @@ body {
     border-bottom: 2px solid #d4af37;
 }
 
+/* Hamburger Menu */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #f0e4d7;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 15px;
+        background-color: #4a2c17;
+        padding: 10px;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        border: 2px solid #d4af37;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
 .hero {
     background: linear-gradient(rgba(46, 30, 15, 0.8), rgba(46, 30, 15, 0.8)), url('images/hero-bg.jpg') no-repeat center center/cover;
     height: 700px;
@@ -263,4 +297,44 @@ body {
 
 .form-section button[type="submit"]:hover {
     background-color: #f0d794;
+}
+
+/* Hamburger button - increased size */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 36px; /* Increased the size of the hamburger icon */
+    background: none;
+    border: none;
+    color: #f5f5f5;
+    position: absolute;
+    top: 60px; /* Adjust to align it with the header */
+    left: 20px;
+    z-index: 20; /* Keeps the button on top */
+}
+
+/* Mobile view styles for nav links */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 30px; /* Increased gap for better spacing between links */
+        background-color: #5c4321;
+        padding: 20px; /* Reduced padding */
+        position: fixed; /* Keeps the menu fixed */
+        top: 100px; /* Raised the dropdown to be just slightly below the header */
+        left: 0;
+        width: 100%; /* Full width to match header */
+        border-top: 3px solid #d4af37; /* Yellow border to match header style */
+        transition: top 0.5s ease;
+        z-index: 15;
+    }
+
+    .nav-links.show {
+        top: 100px; /* Position the menu to slide in from below the header */
+    }
+
+    .menu-toggle {
+        display: block;
+    }
 }

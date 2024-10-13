@@ -9,14 +9,6 @@
 <body>
     <header>
         <div id="menu"></div>
-        <script>
-            document.addEventListener("DOMContentLoaded", function() {
-                fetch('menu.html')
-                    .then(response => response.text())
-                    .then(data => document.getElementById('menu').innerHTML = data)
-                    .catch(error => console.error('Error:', error));
-            });
-        </script>
     </header>
 
     <section class="story-content">
@@ -56,5 +48,8 @@
             </div>
         </div>
     </footer>
+
+    <!-- Reference the JavaScript file to load the menu -->
+    <script src="menu.js"></script>
 </body>
 </html>

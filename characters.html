@@ -7,28 +7,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <header>
-            <div id="menu"></div>
-            <script>
-                document.addEventListener("DOMContentLoaded", function() {
-                    fetch('menu.html')
-                        .then(response => {
-                            if (!response.ok) {
-                                throw new Error('Network response was not ok');
-                            }
-                            return response.text();
-                        })
-                        .then(data => {
-                            document.getElementById('menu').innerHTML = data;
-                        })
-                        .catch(error => {
-                            console.error('There was a problem with the fetch operation:', error);
-                        });
-                });
-            </script>
-        </header>
-        
-
+    <header>
+        <div id="menu"></div> <!-- Placeholder to insert the menu from menu.html -->
+    </header>
 
     <section class="features">
         <div class="container">
@@ -56,5 +37,8 @@
             </div>
         </div>
     </footer>
+
+    <!-- Reference the JavaScript file to load the menu -->
+    <script src="menu.js"></script>
 </body>
 </html>
